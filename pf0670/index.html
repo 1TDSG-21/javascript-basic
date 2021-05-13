@@ -37,7 +37,18 @@
     <script>
         var nome = "";
         const p1 = document.querySelector('p');
-        p1.addEventListener('click', alert('Fui clicado!'));
+
+        p1.addEventListener('click', atualizador);
+        //Comentário de Linha
+        //p1.addEventListener('click', alert('Fui clicado!'));
+        /*
+        Comentário de Bloco
+        */
+
+        function atualizador() {
+            nome = prompt('Digite um nome!');
+            p1.textContent = 'Player-1 : ' + nome;
+        }
     </script>
 </body>
 
