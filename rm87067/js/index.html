@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="" type="text/css">
     <title>VIEW</title>
+
+
     <style>
         p {
             display: inline;
@@ -17,27 +20,36 @@
             border: 3px solid darkblue;
         }
     </style>
+
 </head>
+
 <body>
     <div id="container">
-        <h1>JAVASCRIPT</h1>
+        <h1>JAVASCRIPT BASICS</h1>
 
         <div>
-
-            <p>Player-1: </p>
-
+            <p>Player-1 :</p>
         </div>
+
     </div>
 
+
     <script>
+        var nome = "";
+        const p1 = document.querySelector('p');
 
-        let nome = "";
-        const p1 = document.querySelector("p");
-        p1.addEventListener("click", () => {
-            nome = prompt("Digite o nome do player: ");
-            p1.textContent = "Player-1: " + nome;
-        });
+        p1.addEventListener('click', atualizador);
+        //Comentário de Linha
+        //p1.addEventListener('click', alert('Fui clicado!'));
+        /*
+        Comentário de Bloco
+        */
 
+        function atualizador() {
+            nome = prompt('Digite um nome!');
+            p1.textContent = 'Player-1 : ' + nome;
+        }
     </script>
 </body>
+
 </html>
