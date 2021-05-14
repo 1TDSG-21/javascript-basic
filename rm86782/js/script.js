@@ -30,5 +30,12 @@ console.log("Olá kkkk");
 console.warn("Salve");
 console.info("Coé");
 console.error("óia eu denovo kkkkkk");
-const nomes = ["a", "b"];
-console.table(nomes);
+
+// Vetores -> Arrays
+const linguagens = ["Java", "C#", "Python"];
+console.table(linguagens);
+// Acessando valores do vetor
+for (let i = 0; i < linguagens.length; i++) {
+    console.log(`Posição ${i}º: ${linguagens[i]}`);
+}
+
