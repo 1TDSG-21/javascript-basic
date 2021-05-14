@@ -21,3 +21,14 @@ function atualizador() {
     nome = prompt("Digite o nome do player: ");
     p1.textContent = "Player-1: " + nome;
 }
+
+// Escrevendo no HTML
+// document.write("Estou escrevendo no HTML kkkkkk");
+
+// Escrevendo no console
+console.log("Olá kkkk");
+console.warn("Salve");
+console.info("Coé");
+console.error("óia eu denovo kkkkkk");
+const nomes = ["a", "b"];
+console.table(nomes);
