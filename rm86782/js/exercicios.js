@@ -61,3 +61,16 @@ ex03.addEventListener("click", () => {
     console.log(`Maior número digitado foi o ${maiorIndex + 1}º`);
 
 });
+
+const ex04 = document.querySelector(".ex04");
+ex04.addEventListener("click", () => {
+    let idade = prompt("Digite sua idade: ");
+
+    alert("Resultado no console!");
+
+    if (idade >= 18) {
+        console.log("Você é maior de idade");
+    } else {
+        console.log("Você é menor de idade");
+    }
+});
