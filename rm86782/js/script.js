@@ -6,7 +6,7 @@ const c = 10; // Constante de escopo
 
 // Hoisting -> Em js as variáveis sempre são lidas antes de tudo
 // Podemos fazer bruxaria em JS
-teste2 = "Olá";
+//teste2 = "Olá";
 let test2;
 
 let nome = "";
