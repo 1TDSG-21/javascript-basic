@@ -36,3 +36,28 @@ ex02.addEventListener("click", () => {
     }
     
 });
+
+const ex03 = document.querySelector(".ex03");
+ex03.addEventListener("click", () => {
+    let num;
+    let maior = 0;
+    let maiorIndex;
+    const listaNums = [];
+
+    for (let i = 0; i < 3; i++) {
+        num = prompt(`Digite o ${i + 1}º número: `);
+        listaNums.push(num);
+    }
+
+    listaNums.forEach(e => {
+        if (e > maior) {
+            maior = e;
+            maiorIndex = listaNums.indexOf(e);
+        }
+    });
+
+    alert(`O maior número digitado: ${maior}`);
+    
+    console.log(`Maior número digitado foi o ${maiorIndex + 1}º`);
+
+});
