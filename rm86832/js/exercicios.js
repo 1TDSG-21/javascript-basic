@@ -69,17 +69,19 @@ ex3.addEventListener("click", () =>
 });
 
 const ex4 = document.querySelector(".ex4");
-ex1.addEventListener("click", () =>
+ex4.addEventListener("click", () =>
 {
-    let num1,num2,num3;
+    let idade;
 
-    num1 = prompt("Digite o primeiro número");
-    num2 = prompt("Digite o segundo número");
-    num3 = prompt("Digite o terceiro número");
+    idade = prompt("Digite a sua idade");
 
-    const resultado = num1+num2+num3;
-    const media = resultado / 3;
     alert("Resultado no console")
-    console.log(`Media: ${media}`)
 
+    if (idade >= 18){
+        console.log(`Você é maior de idade, idade atual: ${idade}`)
+    }else if (idade < 18){
+        console.log(`Você é menor de idade, idade atual: ${idade}`)
+    }else if (idade < 0){
+        console.log(`idade invalida`)
+    }
 });
