@@ -4,8 +4,8 @@ ex01.addEventListener("click", () => {
     nota1 = prompt("Digite a primeira nota: ");
     nota2 = prompt("Digite a segunda nota: ");
     nota3 = prompt("Digite a terceira nota: ");
-
-    const media = (nota1 + nota2 + nota3) / 3;
+    
+    const media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3)) / 3;
     alert("Veja o resultado final no console!")
     console.log(`Média: ${media}`);
 });
