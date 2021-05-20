@@ -1,3 +1,45 @@
+
+
+const p1 = document.getElementById('playerOne');
+
+p1.addEventListener('click',function(){
+    let parametro = prompt('Digite o nome do elemento!');
+    criaElemento(parametro);
+});
+
+function criaElemento(parametro){
+    let nomeElemento = parametro;
+    const novoElemento = document.createElement(nomeElemento);
+    novoElemento.textContent = "Novo elemento adicionado com sucesso!";
+    document.body.appendChild(novoElemento);
+}
+
+
+/*
+
+const tit = document.getElementsByClassName('titulos');
+console.log(tit[0].innerHTML);
+
+const titulo = document.querySelectorAll('.titulos');
+console.log(titulo[1].textContent);
+
+
+//20/05/2021
+//Criando um Objeto
+
+let pessoa = {
+    nome: "Alê",
+    profissao:  "Professor",
+    cpf: "12734523489",
+        
+}
+pessoa.nome = "Jorginho";
+console.log("Valor da propriedade do objeto " + pessoa.nome);
+console.log("Valor da propriedade do objeto " + pessoa.profissao);
+console.log("Valor da propriedade do objeto " + pessoa.cpf);
+
+
+
 //Escrevendo no HTML
 
 //Sempre vamos utilizar o objeto document.
@@ -75,7 +117,7 @@ for(lingua of linguagens){
         //p1.addEventListener('click', alert('Fui clicado!'));
         /*
         Comentário de Bloco
-        */
+
 
         const botao = document.querySelector('#btnEnviar');
         botao.addEventListener('click', atualizador);
@@ -84,3 +126,5 @@ for(lingua of linguagens){
             nome = prompt('Digite um nome!');
             p1.textContent = 'Player-1 : ' + nome;
         }
+
+        */
