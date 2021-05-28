@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="" type="text/css">
+    <script src="./js/form.js" defer></script>
+    <title>VIEW</title>
+</head>
+
+<body onload="bannerAnimado1()">
+    <div id="container">
+
+        <img id="imgTit">
+
+        <div>
+            <form action="#" method="GET" onsubmit="return validaCampo()">
+                <fieldset>
+                    <legend>LOGIN</legend>
+                    <div>
+                        <label for="">Usuario</label>
+                        <input type="text" name="txtUser" id="idTxtUser" placeholder="Usuario">
+                    </div>
+                    <div>
+                        <label for="">Sua Senha</label>
+                        <input type="text" name="txtPass" id="idTxtPass" placeholder="Senha">
+                    </div>
+                    <div>
+                        <label for="">Manter Logado:</label>
+                        <input type="checkbox" name="txtLogado" id="idTxtLogado">
+                    </div>
+                    <div>
+                        <button type="submit" id="btnSubmit">LOGIN</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>    
+
+</body>
+</html>
